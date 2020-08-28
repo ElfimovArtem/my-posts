@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import { addBtnHandler } from '../../utils';
+import { useDispatch } from 'react-redux';
 import './form-styles.scss';
 
 export const Form = () => {
   const [post, setPost] = useState('');
+  const dispatch = useDispatch();
 
   return (
     <form className="form">
@@ -18,7 +20,7 @@ export const Form = () => {
       <button
         type="button"
         className="form__btn"
-        onClick={() => addBtnHandler(post, setPost)}
+        onClick={() => addBtnHandler(post, setPost, dispatch)}
       >Добавить</button>
     </form>
   );
