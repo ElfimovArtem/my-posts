@@ -13,7 +13,8 @@ export const postsReducers = (state = initialState, { type, payload }) => {
         syncPosts: [
           ...state.syncPosts,
           {
-            text: payload
+            text: payload.text,
+            id: payload.id
           }
         ]
       };
