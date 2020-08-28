@@ -1,0 +1,23 @@
+.form {
+  width: 90%;
+  height: 40px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  &__input {
+    width: 75%;
+    height: 50%;
+  }
+
+  &__btn {
+    width: 20%;
+    height: 65%;
+    font-weight: bold;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

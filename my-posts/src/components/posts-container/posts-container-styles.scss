@@ -1,0 +1,15 @@
+.posts-container {
+  width: 95%;
+  height: auto;
+  margin: 0 auto;
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-between;
+
+  &__sync-posts, &__async-posts {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}
