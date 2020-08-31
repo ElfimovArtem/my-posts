@@ -1,4 +1,4 @@
-import { ADD_SYNC_POST } from './constants';
+import { ADD_SYNC_POST, FETCH_ASYNC_POST } from './constants';
 
 const initialState = {
   syncPosts: [],
@@ -18,6 +18,8 @@ export const postsReducers = (state = initialState, { type, payload }) => {
           }
         ]
       };
+    case FETCH_ASYNC_POST:
+      return { ...state, asyncPosts: payload };
     default:
       return state;
   }
